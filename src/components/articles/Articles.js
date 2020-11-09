@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Article.css';
 import ArticlesCard from './ArticlesCard.js';
+import {Link} from 'react-router-dom';
 
 // const Article = () => { // becomes:
 const Articles = ({match}) => {
@@ -23,11 +24,7 @@ const Articles = ({match}) => {
       <div className='articles-container'>
         {article.map((indArticle, index) => {
           return(
-            <ArticlesCard key={index} indArticle = {indArticle} setUpdateArticle={setUpdateArticle} updateArticle= {updateArticle}/>
-            // <div key={index}>
-            //   <h1>{indArticle.title}</h1>
-            //   <p>{indArticle.text}</p>
-            // </div>
+            <Link to={`/articles/${indArticle._id}/edit` } key={index}><ArticlesCard  indArticle = {indArticle} setUpdateArticle={setUpdateArticle} updateArticle= {updateArticle}/></Link>
           )
         })}
       </div>

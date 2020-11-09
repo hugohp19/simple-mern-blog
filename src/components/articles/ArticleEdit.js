@@ -7,8 +7,8 @@ const ArticleEdit = ({history}) => {
 
   const handleSubmit = e => {
       e.preventDefault()
-      fetch('/articles', {
-        method: 'POST',
+      fetch('/articles/', {
+        method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values)
       })

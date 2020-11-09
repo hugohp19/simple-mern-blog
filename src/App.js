@@ -4,10 +4,12 @@ import { Container } from 'react-bootstrap';
 import Article from './components/articles/Article';
 import Articles from './components/articles/Articles';
 import ArticleForm from './components/articles/ArticleForm';
+import Navbar from './components/articles/Navbar';
 
 const App = () => {
   return (
       <BrowserRouter>
+             <Navbar />
         <Container>
           <Switch>
             <Route path="/articles/new" component={ArticleForm} />

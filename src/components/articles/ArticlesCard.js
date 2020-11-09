@@ -9,7 +9,7 @@ const ArticleCard = ({indArticle, setUpdateArticle, updateArticle}) => {
   let history = useHistory();
   const deletetext = (e) =>{
     e.preventDefault()
-    console.log(e.target.id)
+    //console.log(e.target.id)
       fetch(`/articles/${e.target.id}`, {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' }
@@ -26,7 +26,7 @@ const ArticleCard = ({indArticle, setUpdateArticle, updateArticle}) => {
 
 
   return (
-    <Toast>
+    <Toast style={{width: '500px', marginTop:'15px'}}>
       <div className='title-container'>
         <div>
           <FcAcceptDatabase />

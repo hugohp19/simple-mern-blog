@@ -1,6 +1,20 @@
+.navbar-container{
+  display: flex;
+  width: 100vw;
+  background-color: lightsalmon;
+}
+
+.navbar-container li{
+  padding-left: 20px;
+  list-style-type: none;
+  color: black;
+}
+
+
 .articles-container{
   display: flex;
   justify-content: space-evenly;
+  
   flex-wrap: wrap;
 }
 
