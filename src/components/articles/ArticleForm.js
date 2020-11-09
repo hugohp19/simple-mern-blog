@@ -13,11 +13,11 @@ const ArticleForm = ({history, match}) => {
     fetch(`/articles/${match.params.articleId}`)
       .then(response => response.json())
       .then(article => {setArticle(article)
-      //console.log(article);
       setTitle(article.title);
       setText(article.text);
-      //console.log(article.title)
-      //console.log(title)
+      initialState.title = article.title;
+      initialState.text = article.text;
+      setValues(initialState);
     })
       .catch(error => alert(error))
   }, [])

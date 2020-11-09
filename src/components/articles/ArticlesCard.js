@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Toast from 'react-bootstrap/Toast';
 import { FcAcceptDatabase } from 'react-icons/fc';
 import { useHistory } from 'react-router-dom';
