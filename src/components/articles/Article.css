@@ -1,0 +1,36 @@
+.articles-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.title-container{
+  background-color: rgb(255, 208, 208);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-container-delete-button{
+ font-size: 0.5rem;
+ font-weight: bolder;
+ border-radius: 50%;
+ background-color: lightcoral;
+ margin-right: 5px;
+}
+
+.title-container-delete-button:hover{
+  background-color: lightskyblue;
+ }
+
+
+ .add-text-container{
+   margin-top: 20px;
+ }
+
+ .add-text-container h2{
+  text-align: center;
+ }
+
+ .add-text-button{
+  text-align: center;
+ }

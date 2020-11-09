@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 
-const ArticleForm = ({history}) => {
+const ArticleEdit = ({history}) => {
   const initialState = { title: '', text: '' }
   const [values, setValues] = useState(initialState);
 
   const handleSubmit = e => {
-    // prevent HTML default submission
       e.preventDefault()
-    
-    // POST request to RESTful route (to be defined in backend)
       fetch('/articles', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -49,4 +46,4 @@ const ArticleForm = ({history}) => {
   )
 }
 
-export default ArticleForm;
+export default ArticleEdit;
